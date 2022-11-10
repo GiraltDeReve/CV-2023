@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon CV en ligne</title>
+    <link rel="stylesheet" href="CV.css" />
+    <link rel="shortcut icon" href="./assets/icon cv.ico" type="image/x-icon" />
+  </head>
+  <body>
+
+    <header id="tittle">
+    <h1>Céline ROUAIRE</h1>
+  </header>
+
+  <main>
+
+<div class="presentation">
+
+  <div class="photo">
+    <img src="./assets/Image1.png"  target="_blank" alt="Photo de CV" width="200" height="200"/>
+    </div>
+
+
+
+  <div class="container">
+
+    <div class="container-onglets">
+      <!-- data anim(ou index, comme on veut) : via JS, relier les élémenst du dom entre eux (ici bouton avec texte). Le 1 signifie pour notre premier onglet -->
+      <div class="onglets active" data-anim="1">Compétences/<br>connaissances</div>
+      <div class="onglets" data-anim="2">Soft skills</div>
+    </div>
+
+    <div class="contenu activeContenu" data-anim="1">
+      <h3>Possédées et en cours d'aquisition :  </h3>
+      <hr>
+      <p> <strong> Langue </strong> :  anglais <br><br>
+        <strong> Languages de programmation WEB </strong> :  HTML/CSS - JavaScript <br><br>
+        <strong> Bases en informatique </strong> : composition d'une unité centrale, fonctionnement du WEB... <br> <br>
+        <strong>Gestion de projet</strong> : Recueillir et analyses demandes/besoins clients, repartition et prioritisation des tâches, analyse résultats, travail d'équipe... <br><br>
+       <strong> Enquêtes statistiques </strong> : Construction d’enquêtes, traitement statistique et analyse de données <br><br>
+      </p>
+    </div>
+
+    <div class="contenu" data-anim="2">
+      <h3> Mais aussi ... </h3>
+      <hr>
+      <p> <strong> Soft skills </strong> : <br>  </p>
+        <ul>
+        <li> Organisation </li>
+        <li> Rigeur </li>
+        <li> autonomie </li>
+        <li> Sérieux</li>
+        <li> Gestion du stress </li>
+        <li> Persévérance </li>
+        <li> Orientée résolution de probléme </li>
+        <li> Curiosité </li>
+        <li> Plaisir d’apprendre </li>
+        <li> Esprit d'équipe et empathie </li>
+      </ul>
+      
+    </div>
+
+  </div>
+</div>
+  
+
+
+<div class="blocs">
+
+  <div class="bloc" id="experiences">
+    <h3> MES EXPERIENCES PROFESSIONNELLES</h3> <br>
+    <hr> <br>
+    <ul class="sous-titres "> <strong>Accompagnatrice en Validation des Acquis de l’Expérience </strong> 
+     <br>  
+     <div class="lieu-date"> 
+     <p> - Université Clermont Auvergne (Octobre 2020 – Aout 2022) <br> </p>
+      </div>
+      <div class="liste">
+      <li>	Accompagnement et suivi des candidats VAE dans le dispositif (à distance, en présence, individuel et collectif) </li>
+      <li>	Ingénierie pédagogique et création d’outils numériques </li>
+      <li>	Animation d’activités pédagogiques et de formation </li>
+    </div>
+      <br>
+    </ul> 
+      <ul class="sous-titres "> <strong>	Stagiaire psychologue </strong>
+      <div class="lieu-date">
+        <p> - Astu'sciences : association de médiation scientifique <br>  
+      (Septembre 2019 - Mai 2020)</p>
+    </div>
+  </ul>
+    </div>
+  
+  <div class="bloc" id="universitaire">
+    <h3>MON PARCOURS UNIVERSITAIRE</h3> <br>
+    <hr> <br>
+    <ul class="sous-titres "> <strong>Université Clermont-Auvergne </strong>
+      <LI>	2014 - 2018 : Licence de Psychologie </LI>
+      <li>	2018 - 2020 : Master mention Psychologie, Parcours "Psychologie, Ingénierie de la Formation, Orientation et Insertion"</li>
+    </ul>
+  </div>
+
+  <div class="bloc" id="openClassroom">
+    <h3>MON PARCOURS OPENCLASSROOM </h3> <br>
+    <hr> <br>
+    <ul <h2> <strong> Certifications obtenues pour les cours : </strong> </h2>
+<li>	Apprenez à créer votre site web avec HTML5 et CSS3 </li>
+<li>	Apprenez à programmer avec JavaScript </li>
+<li> Apprenez à utiliser la ligne de commande dans un terminal> </li>
+<li>	Découvrez le fonctionnement des algorithmes</li>
+<li>	Comprendre le Web</li>
+</ul>
+  </div>
+
+</div>
+
+
+
+<div class="themeContainer">
+  <div class="theme" id="dark"></div>
+  <div class="theme" id="white"></div>
+</div>
+
+
+
+    </main>
+<script src="./CV.js"></script>
+  </body>
+
+  <footer>
+    
+ <br>
+      <h3> Où me trouver et où me contacter : </h3>
+      <br>
+      <hr>
+      <br>
+  
+      <p id ="contacts"> 
+        <img src="./assets/mail.png" alt="logo github"> 
+        
+        <a href="mailto:celine.rouaire@gmail.com"> <strong> Mon mail </strong> </a> <br><br> <strong> 
+        <img src="./assets/linkedin.png" alt="logo github"> 
+        <a href="https://www.linkedin.com/in/c%C3%A9line-rouaire-b91408165/" title="Mon profil Linkedin" target="_blank"><strong> Mon profil Linkedin</strong></a> <br><br> 
+        <img src="./assets/github.png" alt="logo github"> 
+        <a href="https://github.com/GiraltDeReve" title="Mon profil Github" target="_blank"> <strong> Mon profil Github</strong></a>
+    <br><br><br>
+      </div> 
+  </footer>
+ 
+</html>   

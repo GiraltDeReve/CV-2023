@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans&family=Ibarra+Real+Nova&family=Lato&display=swap');
+
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ }
+ 
+body {
+  background : url(./assets/bg3.jpg) no-repeat fixed right/cover;
+  font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+  overflow-X: hidden;
+  margin: 0;
+  display: flex;
+  flex-direction: column ;
+}
+
+h1 {
+  font-family: 'Albert Sans', sans-serif;
+  position: relative;
+  top: 30px;
+  left: 50%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 3.5rem;
+  color: rgba(248, 248, 255, 0.932);
+}
+
+
+h2 {
+  color: hwb(167 1% 81%);
+}
+
+h3 {
+  text-align: center;
+  justify-items: center;
+}
+
+strong {
+  color: DarkSlateGrey;
+  font-size: 17px;
+}
+
+ul {
+  margin-left: 10%;
+  line-height: 25px;
+}
+
+
+/* *********************************************** */
+#tittle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  padding : 0;
+  background-color: rgba(47, 79, 79, 0.842);
+  border-bottom-right-radius: 15px 15px;
+  box-shadow: -6px 6px 10px rgba(47, 79, 79, 0.493);
+}
+
+
+
+/* *********************** PRESENTATION ******************* */
+.photo {
+  position: absolute;
+  top: 5%;
+  left: 7%;
+}
+
+.container {
+  position: absolute;
+  top: 270px;
+  left: 7%;
+  width: 340px;
+  height: 600px;
+  background: rgba(73, 90, 84, 0.178);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 0;
+  }
+  
+.container-onglets {
+  background: rgba(73, 90, 84, 0.178);
+  width: 100%;
+  height: 20%;
+  display: flex;
+  border-bottom:1px solid #333;
+}
+  
+.onglets {
+  width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.onglets:not(:nth-child(2)) {
+  /* on veut donner une bordure aux deux premier mais pas au troisiéme */
+  border-right : 1px solid #333;
+}
+
+.contenu {
+height: 80%;
+width: 100%;
+position: absolute;
+opacity: 0;
+line-height: 22px;
+background : rgba(218, 221, 220, 0.719);
+}
+
+.contenu h3 {
+  padding: 20px;
+}
+
+.contenu hr {
+width: 20%;
+height: 2px;
+margin-left: 20px;
+background: #000;
+border: none;
+}
+
+.contenu p {
+  padding : 20px;
+}
+
+/* Anim */
+.active {
+  background: rgba(47, 79, 79, 0.63);
+  color: #f1f1f1;
+  transition: all 0.3s ease;
+}
+
+.activeContenu {
+  animation: fade 0.5s forwards
+}
+ 
+@keyframes fade {
+  from {
+    opacity : 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ************************************************* */
+
+.blocs {
+  margin-left: 450px;
+  margin-top : 200px;
+  margin-right: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 2fr 1fr 2fr ;
+  grid-template-areas: 
+  "a "
+  "b "
+  "c ";
+  grid-gap: 30px;
+}
+
+.bloc {
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(218, 221, 220, 0.719);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(128, 128, 128, 0.822);
+  font-size: 1rem;
+  height: max-content;
+}
+
+#experiences {
+  grid-area: "a";
+}
+#universitaire {
+  grid-area: "b";
+}
+#openClassroom {
+  grid-area: "c";
+}
+
+.lieu-date {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.liste {
+  padding-top: 10px;
+  padding-left: 20px;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+
+.themeContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.theme {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+#dark {
+    background-color: black;
+}
+#white {
+  background-color: white; 
+  border: #333 solid;
+}
+
+.darkTheme {
+    background: url(./assets/bg1.jpeg) no-repeat fixed right/cover;
+    color : white
+}
+.whiteTheme {
+  background : url(./assets/bg3.jpg) no-repeat fixed right/cover;
+}
+
+
+/* ******************FOOTER******************** */
+footer {
+  background-color: rgba(80, 107, 107, 0.295);
+    text-align: center;
+}
+
+footer p {
+  color: DarkSlateGrey;
+  font-size: 17px;
+}
+
+footer hr {
+  width: 100%;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.295);
+  border: none;
+  }
+
+footer  h3 {
+  font-family: 'Albert Sans', sans-serif;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  color: rgba(248, 248, 255, 0.932);
+}
+
+a {
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  transition: color 2s;
+  margin: 20px;
+}
+
+a:hover {
+  background-color: rgba(224, 235, 235, 0.719);
+  border-radius: 2px;
+  color: white;
+  }
+  
+
+
+/* ***************Responsive*************** */
+@media screen and (max-width: 1133px) {
+  .blocs {
+    margin-right: 2%;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+
+  .blocs {
+   position: absolute;
+   display: grid;
+   top: 460px;
+    margin-left: 0;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas: 
+    "a "
+    "b "
+    "c "
+  }
+  
+  body {
+    margin: 40px;
+    overflow: scroll;
+  }
+
+  #experiences {
+    grid-area: "a";
+  }
+  #universitaire {
+    grid-area: "b";
+  }
+  #openClassroom {
+    grid-area: "c";
+  }
+
+ .photo {
+   height: 100px ;
+   width: 100px;
+   top : 5px;
+   left: 15px;
+  }
+
+ .container {
+   position: absolute;
+   top: 150px;
+   left: 160px;
+   width: 70%;
+   height: 500px;
+   background: rgba(73, 90, 84, 0.178);
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   margin-right: 5%;
+   padding: 0;
+  }
+
+
+ h1 {
+   left: 215px;
+  }
+
+ footer {
+   position: absolute;
+   top: 1750px;
+   left: 160px;
+   width: 70%;
+  }
+
+  footer h3 {
+    color: rgba(0, 0, 0, 0.623);
+  }
+  footer strong {
+color: #f1f1f1;
+  } 
+}
