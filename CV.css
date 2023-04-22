@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans&family=Ibarra+Real+Nova&family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap|Schibsted+Grotesk&display=swap');
 
 
 *, ::before, ::after {
@@ -8,88 +8,146 @@
  }
  
 body {
-  background : url(./assets/bg3.jpg) no-repeat fixed right/cover;
-  font-family: 'Lato', sans-serif;
-  min-height: 100vh;
-  overflow-X: hidden;
-  margin: 0;
-  display: flex;
-  flex-direction: column ;
+  width: 1400px;
+  font-family: 'Montserrat', sans-serif;
+  margin: auto;
+  background-color: rgb(25,27,31);
 }
 
 h1 {
-  font-family: 'Albert Sans', sans-serif;
-  position: relative;
-  top: 30px;
-  left: 50%;
+  font-family: 'Schibsted Grotesk';
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 3.5rem;
-  color: rgba(248, 248, 255, 0.932);
+  font-size: 4rem;
+  color: #f1f1f1;
+  justify-content: center;
+  margin: 20px;
 }
-
 
 h2 {
   color: hwb(167 1% 81%);
+  font-size: 1.7rem;
+  color: rgb(25,27,31);
 }
 
 h3 {
-  text-align: center;
-  justify-items: center;
+ padding-top: 10px;
+ font-size: 1.3rem;
 }
 
-strong {
-  color: DarkSlateGrey;
-  font-size: 17px;
+h4 {
+  text-align: center;
+  justify-items: center;
+  font-size: 1.5rem;
 }
+
 
 ul {
   margin-left: 10%;
   line-height: 25px;
 }
 
+i {
+  color: #e6e9e9;
+}
 
 /* *********************************************** */
-#tittle {
-  position: absolute;
-  top: 0;
-  left: 0;
+header {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  height: 120px;
-  padding : 0;
-  background-color: rgba(47, 79, 79, 0.842);
-  border-bottom-right-radius: 15px 15px;
-  box-shadow: -6px 6px 10px rgba(47, 79, 79, 0.493);
+  height: 150px;
+ margin-top: 20px;
+}
+
+nav {
+  display: flex;
+  padding: 10px;
+}
+nav a {
+  color: #f1f1f1;
+  font-size: 1.2rem;
 }
 
 
+/* ------------------------------------------ */
 
-/* *********************** PRESENTATION ******************* */
-.photo {
-  position: absolute;
-  top: 5%;
-  left: 7%;
+main{
+  display: flex;
+  flex-direction: column;
 }
 
-.container {
-  position: absolute;
-  top: 270px;
-  left: 7%;
-  width: 340px;
-  height: 600px;
-  background: rgba(73, 90, 84, 0.178);
+#introduction {
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+}
+
+#contenu-introduction {
+  position: relative;
+  width: 75%;
+  padding: 30px;
+}
+
+#portrait {
+width :245px; 
+height :245px;
+position: relative;
+overflow: hidden;
+float: left;
+
+margin :20px;
+shape-outside: circle();
+}
+#photo-portrait{
+  height: inherit;
+  width: inherit;
+  border: 0.7rem solid rgb(92,113,113);
+  border-radius : 50%;
+}
+
+#title-logo-introduction {
+  display: flex;
+}
+#title-introduction {
+  font-size: 2.5rem;
+  color: white;
+  padding-bottom: 20px;
+}
+#text-introduction {
+  color: white;
+  font-size: 1.5rem;
+}
+
+
+article {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: row-reverse;
+  background: #f1f1f12e;
+  border-radius: 10px;
+  padding: 70px 30px;
+
+}
+
+/* *********************** ONGLETS ******************* */
+
+#container {
+  width: 31%;
+  height: 753px;
+  background-color: rgb(255 255 255);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  margin: 0;
+  margin: 20px 0;
   padding: 0;
   }
   
-.container-onglets {
+#container-onglets {
   background: rgba(73, 90, 84, 0.178);
   width: 100%;
   height: 20%;
   display: flex;
-  border-bottom:1px solid #333;
+  border-bottom:1px solid #f1f1f1;;
 }
   
 .onglets {
@@ -97,7 +155,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 1.3rem;
   font-weight: 700;
   cursor: pointer;
   padding: 10px;
@@ -105,39 +163,38 @@ ul {
 
 .onglets:not(:nth-child(2)) {
   /* on veut donner une bordure aux deux premier mais pas au troisiéme */
-  border-right : 1px solid #333;
+  border-right : 1px solid #f1f1f1;
 }
 
 .contenu {
-height: 80%;
-width: 100%;
+width: 404px;
 position: absolute;
 opacity: 0;
 line-height: 22px;
-background : rgba(218, 221, 220, 0.719);
+padding: 10px ;
 }
 
-.contenu h3 {
-  padding: 20px;
+.contenu h4 {
+  padding: 10px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: rgba(47, 79, 79, 0.822);
 }
 
-.contenu hr {
-width: 20%;
-height: 2px;
-margin-left: 20px;
-background: #000;
-border: none;
+.li-principal {
+  padding : 10px 0 0 0 ;
+  font-weight: 700;
 }
 
-.contenu p {
-  padding : 20px;
+.li-secondaire {
+  font-weight : 500;
 }
-
-/* Anim */
 .active {
   background: rgba(47, 79, 79, 0.63);
-  color: #f1f1f1;
+  color : white;
+  font-size: 1.3rem;
   transition: all 0.3s ease;
+  
 }
 
 .activeContenu {
@@ -155,203 +212,174 @@ border: none;
 
 /* ************************************************* */
 
-.blocs {
-  margin-left: 450px;
-  margin-top : 200px;
-  margin-right: 10%;
-  padding-right: 5%;
-  padding-left: 5%;
-  display: grid;
-  grid-template-columns: 1fr ;
-  grid-template-rows: 2fr 1fr 2fr ;
-  grid-template-areas: 
-  "a "
-  "b "
-  "c ";
-  grid-gap: 30px;
-}
-
-.bloc {
+#blocs {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(218, 221, 220, 0.719);
+  width: 65%;
+}
+
+#formation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bloc {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
   padding: 20px;
+  margin: 20px;
+  background-color: rgb(255 255 255);
   border-radius: 5px;
   box-shadow: 0px 2px 5px rgba(128, 128, 128, 0.822);
-  font-size: 1rem;
-  height: max-content;
 }
 
-#experiences {
-  grid-area: "a";
-}
-#universitaire {
-  grid-area: "b";
-}
-#openClassroom {
-  grid-area: "c";
+.bloc h2 {
+  color: rgba(47, 79, 79, 0.822);
 }
 
-.lieu-date {
-  font-size: 0.8rem;
+.bloc i {
+  color : rgba(47, 79, 79, 0.822);
+}
+
+.bloc strong {
   font-weight: 700;
+  font-size: 1rem;
 }
-.liste {
+
+.list-block{
   padding-top: 10px;
   padding-left: 20px;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: 400;
 }
 
-
-.themeContainer {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 100;
+.lieu-date {
+  font-size: 1rem;
+  font-weight: 600;
+  padding-top: 5px;
+  color: rgba(47, 79, 79, 0.822);
 }
 
-.theme {
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
+li a ,#link-download {
+  color: rgba(47, 79, 79, 0.822);
+  font-size: 0.9rem;
+  font-weight: 600;
 }
-
-#dark {
-    background-color: black;
-}
-#white {
-  background-color: white; 
-  border: #333 solid;
-}
-
-.darkTheme {
-    background: url(./assets/bg1.jpeg) no-repeat fixed right/cover;
-    color : white
-}
-.whiteTheme {
-  background : url(./assets/bg3.jpg) no-repeat fixed right/cover;
-}
-
 
 /* ******************FOOTER******************** */
 footer {
-  background-color: rgba(80, 107, 107, 0.295);
-    text-align: center;
+  background-color: #333;;
+  text-align: center;
+  border-radius: 5px 5px 0px 0px;;
 }
 
-footer p {
-  color: DarkSlateGrey;
-  font-size: 17px;
-}
-
-footer hr {
-  width: 100%;
-  height: 2px;
-  background: rgba(0, 0, 0, 0.295);
-  border: none;
-  }
-
-footer  h3 {
-  font-family: 'Albert Sans', sans-serif;
-  position: relative;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+footer  h2 {
+  color: white;
+  padding: 10px;
   font-size: 2rem;
-  color: rgba(248, 248, 255, 0.932);
+}
+
+
+.link-contact{
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
 }
 
 a {
   cursor: pointer;
-  outline: none;
   text-decoration: none;
   padding: 2px 1px 0;
-  transition: color 2s;
-  margin: 20px;
+  margin: 10px;
+  color: white;
 }
 
 a:hover {
-  background-color: rgba(224, 235, 235, 0.719);
-  border-radius: 2px;
-  color: white;
+text-decoration: underline;
+
   }
   
 
 
 /* ***************Responsive*************** */
-@media screen and (max-width: 1133px) {
-  .blocs {
-    margin-right: 2%;
+@media screen and (max-width: 768px) {
+  article {
+    flex-direction: column;
+  }
+
+  #blocs {
+    width: 100%;
+  }
+  .bloc {
+    width: 100%;
+  }
+  #experience-pro {
+    width: 84%;
+  }
+
+  #container {
+    width: 84%;
+    height: 586px;
+    background-color: rgb(255 255 255);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 20px 107px;
+    padding: 0;
+}
+#container-onglets {
+  background: rgba(73, 90, 84, 0.178);
+  width: 40%;
+  height: 69%;
+  border-bottom: 1px solid #f1f1f1;
+  flex-direction: column;
+  position: absolute;
+}
+.onglets {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.contenu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 40%;
+  position: absolute;
+  opacity: 0;
+  line-height: 22px;
+  padding: 10px;
+}
+
+#list-hard-skills {
+  display: flex;
+  width: 700px;
+}
+}
+
+@media screen and (max-width: 500px){
+  #container-onglets {
+    width: 60%;
+  }
+
+  .contenu {
+    margin-left: 70%;
   }
 }
 
-
-@media screen and (max-width: 1000px) {
-
-  .blocs {
-   position: absolute;
-   display: grid;
-   top: 460px;
-    margin-left: 0;
-    grid-template-columns: 1fr ;
-    grid-template-rows: 1fr 1fr 1fr ;
-    grid-template-areas: 
-    "a "
-    "b "
-    "c "
+@media screen and (max-width: 350px){
+  nav {
+    width: 50%;
   }
-  
-  body {
-    margin: 40px;
-    overflow: scroll;
-  }
-
-  #experiences {
-    grid-area: "a";
-  }
-  #universitaire {
-    grid-area: "b";
-  }
-  #openClassroom {
-    grid-area: "c";
-  }
-
- .photo {
-   height: 100px ;
-   width: 100px;
-   top : 5px;
-   left: 15px;
-  }
-
- .container {
-   position: absolute;
-   top: 150px;
-   left: 160px;
-   width: 70%;
-   height: 500px;
-   background: rgba(73, 90, 84, 0.178);
-   border-radius: 5px;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-   margin-right: 5%;
-   padding: 0;
-  }
-
-
- h1 {
-   left: 215px;
-  }
-
- footer {
-   position: absolute;
-   top: 1750px;
-   left: 160px;
-   width: 70%;
-  }
-
-  footer h3 {
-    color: rgba(0, 0, 0, 0.623);
-  }
-  footer strong {
-color: #f1f1f1;
-  } 
 }

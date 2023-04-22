@@ -6,148 +6,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mon CV en ligne</title>
     <link rel="stylesheet" href="CV.css" />
-    <link rel="shortcut icon" href="./assets/icon cv.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/icon-cv.ico" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/065a8ca0d0.js" crossorigin="anonymous"></script>
+    <script src="./CV.js" defer ></script>
+    <meta property="og:title" content="Mon profil Linkedin">
+    <meta property="og:description" content="Découvrez mon profil Linkedin">
+    <meta property="og:image" content="./assets/linkedin.png">
+    <meta property="og:url" content="https://www.linkedin.com/in/c%C3%A9line-rouaire-b91408165/">
+    <meta property="og:title" content="Mon profil Github">
+    <meta property="og:description" content="Découvrez mon profil Github">
+    <meta property="og:image" content="./assets/github.png">
+    <meta property="og:url" content="https://github.com/GiraltDeReve">
   </head>
-  <body>
 
-    <header id="tittle">
+<body>
+  <header>
     <h1>Céline ROUAIRE</h1>
+    <nav>
+      <a href="#formation">Formations 
+      <a href="#experience-pro">Expérience professionnelles</a>
+      <a href="#contacts">Contacts</a>
+    </nav>
   </header>
-
-  <p> salut <a href="https://openclassrooms.com/fr/courses/6175841-apprenez-a-programmer-avec-javascript/6280131-resume-du-cours"></a></p>
 
   <main>
 
-<div class="presentation">
-
-  <div class="photo">
-    <img src="./assets/Image1.png"  target="_blank" alt="Photo de CV" width="200" height="200"/>
-    </div>
-
-
-
-  <div class="container">
-
-    <div class="container-onglets">
-      <!-- data anim(ou index, comme on veut) : via JS, relier les élémenst du dom entre eux (ici bouton avec texte). Le 1 signifie pour notre premier onglet -->
-      <div class="onglets active" data-anim="1">Compétences/<br>connaissances</div>
-      <div class="onglets" data-anim="2">Soft skills</div>
-    </div>
-
-    <div class="contenu activeContenu" data-anim="1">
-      <h3>Possédées et en cours d'aquisition :  </h3>
-      <hr>
-      <p> <strong> Langue </strong> :  anglais <br><br>
-        <strong> Languages de programmation WEB </strong> :  HTML/CSS - JavaScript <br><br>
-        <strong> Bases en informatique </strong> : composition d'une unité centrale, fonctionnement du WEB... <br> <br>
-        <strong>Gestion de projet</strong> : Recueillir et analyses demandes/besoins clients, repartition et prioritisation des tâches, analyse résultats, travail d'équipe... <br><br>
-       <strong> Enquêtes statistiques </strong> : Construction d’enquêtes, traitement statistique et analyse de données <br><br>
-      </p>
-    </div>
-
-    <div class="contenu" data-anim="2">
-      <h3> Mais aussi ... </h3>
-      <hr>
-      <p> <strong> Soft skills </strong> : <br>  </p>
-        <ul>
-        <li> Organisation </li>
-        <li> Rigeur </li>
-        <li> autonomie </li>
-        <li> Sérieux</li>
-        <li> Gestion du stress </li>
-        <li> Persévérance </li>
-        <li> Orientée résolution de probléme </li>
-        <li> Curiosité </li>
-        <li> Plaisir d’apprendre </li>
-        <li> Esprit d'équipe et empathie </li>
-      </ul>
-      
-    </div>
-
-  </div>
-</div>
-  
-
-
-<div class="blocs">
-
-  <div class="bloc" id="experiences">
-    <h3> MES EXPERIENCES PROFESSIONNELLES</h3> <br>
-    <hr> <br>
-    <ul class="sous-titres "> <strong>Accompagnatrice en Validation des Acquis de l’Expérience </strong> 
-     <br>  
-     <div class="lieu-date"> 
-     <p> - Université Clermont Auvergne (Octobre 2020 – Aout 2022) <br> </p>
+    <section id="introduction">
+      <div id="contenu-introduction">
+        <figure id="portrait">
+          <img id ="photo-portrait" src="./assets/Image1.png" alt="Portrait photo de CV"/>
+        </figure>
+        <div>
+          <h2 id="title-introduction"> Bonjour ! <i class="fa-solid fa-handshake-angle"></i></h2>
+          <p id="text-introduction">En <strong>reconversion professionnelle</strong>  dans le développement web avec une formation chez OpenClassrooms, je suis à la recherche d'une <strong>alternance</strong>  pour appliquer mes compétences <strong>en développement web</strong>. Motivée, organisée et prête à relever de nouveaux défis, je suis déterminée à réussir ma reconversion dans ce domaine passionnant.</p>
+        </div>
       </div>
-      <div class="liste">
-      <li>	Accompagnement et suivi des candidats VAE dans le dispositif (à distance, en présence, individuel et collectif) </li>
-      <li>	Ingénierie pédagogique et création d’outils numériques </li>
-      <li>	Animation d’activités pédagogiques et de formation </li>
-    </div>
-      <br>
-    </ul> 
-      <ul class="sous-titres "> <strong>	Stagiaire psychologue </strong>
-      <div class="lieu-date">
-        <p> - Astu'sciences : association de médiation scientifique <br>  
-      (Septembre 2019 - Mai 2020)</p>
-    </div>
-  </ul>
-    </div>
+    </section>
+
+
+    <article>
+
+      <div id="blocs"> 
+
+        <section id="formation">
+
+          <section id="formation-OC" class="bloc" >
+            <h2><i class="fa-solid fa-code"></i>  FORMATION "DEVELOPPEUR WEB"</h2> 
+            <p class="lieu-date"> OpenClassroom (Décembre 2023 – Juillet 2023)</p>
+            <h3>Projets validés </h3>
+            <ul class="list-block">
+              <li>Créer une page d'accueil avec <strong>HTML et CSS</strong> <br>
+                  <a href="https://github.com/GiraltDeReve/Site-Booki" title="Lien Git pour projet HTML/CSS" target="_blank">(Lien Git ici)</a>
+              </li>
+              <li>Créer une page web dynamique avec <strong>Javscript et une API</strong><br>
+                <a href="https://github.com/GiraltDeReve/Site-Portfolio-Sophie-Bluel-" title="Lien Git pour projet Javascript/API" target="_blank">(Lien Git ici)</a>
+              </li>
+              <li>Planifier le développement d'un site pour un client avec les <strong>méthodes agiles</strong>
+                <a id="link-download" href="" download>(Télécharger mon dossier)</a>
+              </li>
+              <li>Debugger et <strong>optimiser le SEO</strong> d'un site web<br>
+                <a href="https://github.com/GiraltDeReve/Site-Portfolio-Photographe" title="Lien Git pour projet SEO" target="_blank">(Lien Git ici)</a>
+              </li>
+            </ul>
+            <h3>Projets en cours de validation</h3>
+            <ul class="list-block">
+              <li>Créer une application web avec <strong>React</strong><br>
+                <a href="https://github.com/GiraltDeReve/Application-web-de-location" title="Lien Git pour projet REACT" target="_blank">(Lien Git ici)</a>
+              </li>
+              <li>Développer le back-end d'un site avec <strong>Node.js, Express et Mongo.DB</strong></li>
+            </ul>
+          </section>
+
+          <section id="formation-initiale" class="bloc" >
+            <h2><i class="fa-solid fa-graduation-cap"></i>  MON PARCOURS UNIVERSITAIRE </h2>
+            <h3>Université Clermont-Auvergne :</h3>
+            <ul class="list-block" id="list-formation-initiale">
+              <li>2014 - 2018 : Licence de Psychologie </LI>
+              <li>2018 - 2020 : Master mention Psychologie, Parcours "Psychologie, Ingénierie de la Formation, Orientation et Insertion"</li>
+            </ul>
+          </section>
+
+        </section>
+
+        <section  id="experience-pro" class="bloc" >
+          <h2><i class="fa-solid fa-user-tie"></i>  MES EXPERIENCES PROFESSIONNELLES</h2> 
+          <h3>Accompagnatrice en Validation des Acquis de l’Expérience</h3>
+          <p class="lieu-date">Université Clermont Auvergne (Octobre 2020 – Aout 2022)</p>
+          <ul class="list-block" id="list-experience">
+            <li>Accompagnement et suivi des candidats VAE dans le dispositif (à distance, en présence, individuel et collectif) </li>
+            <li>Ingénierie pédagogique et création d’outils numériques </li>
+            <li>Animation d’activités pédagogiques et de formation </li>
+          </ul>
+        </section>
+
+      </div>
+   
+
+      <aside id="container">
+        <div id="container-onglets">
+          <h2 class="onglets active" data-anim="1"> Compétences/<br>connaissances</h2>
+          <h2 class="onglets" data-anim="2">Soft skills</h2>
+        </div>
+        <div class="contenu activeContenu" data-anim="1">
+          <h4>Aquis et en cours d'aquisition :  </h4>
+          <ul id="list-hard-skills">
+            <div id="list1">
+              <li class="li-principal">Bon niveau d'anglais </li> 
+              <li class="li-principal">HTML/CSS - JavaScript </li>
+              <li class="li-principal">En cours d'aquisition : 
+                <ul>
+                  <li class="li-secondaire">Framework React</li>
+                  <li class="li-secondaire">Node.js et Express</li>
+                  <li class="li-secondaire">Base de données Mongo.DB</li>
+                </ul>
+              </li>
+              <li class="li-principal">Gestion de projet et méthodes agiles : 
+                <ul>
+                <li class="li-secondaire">Veille informationelle</li> 
+                <li class="li-secondaire">Gestion de projet avec Tableau KANBAN</li> 
+                <li class="li-secondaire">Découpage de projet et utilisation d'user stories</li> 
+                <li class="li-secondaire">Méthode Scrum</li> 
+                </ul>
+              </li>
+            </div>
+            <div id="list2">
+              <li class="li-principal"> Optimisation d'un site WEB et de son SEO : 
+                <ul> 
+                  <li>Pratiques pour améliorer : 
+                    <ul>
+                      <li class="li-secondaire">Performances d'un site</li>
+                      <li class="li-secondaire">Référencement naturel</li>
+                      <li class="li-secondaire">Accessibilité d'un site</li>
+                    </ul>
+                  </li>  
+                </ul>
+              </li>
+            </div>
+          </ul> 
+        </div>
+        <div class="contenu" data-anim="2">
+          <h4> Mais aussi ... </h4>
+          <ul id="list-soft-skills">
+            <li> Organisation </li>
+            <li> Rigeur </li>
+            <li> Autonomie </li>
+            <li> Sérieux</li>
+            <li> Gestion du stress </li>
+            <li> Persévérance </li>
+            <li> Orientée résolution de probléme </li>
+            <li> Curiosité </li>
+            <li> Plaisir d’apprendre </li>
+            <li> Esprit d'équipe </li>
+          </ul>
+        </div>
+      </aside>
+
+    </article>
+  </main>
+
   
-  <div class="bloc" id="universitaire">
-    <h3>MON PARCOURS UNIVERSITAIRE</h3> <br>
-    <hr> <br>
-    <ul class="sous-titres "> <strong>Université Clermont-Auvergne </strong>
-      <LI>	2014 - 2018 : Licence de Psychologie </LI>
-      <li>	2018 - 2020 : Master mention Psychologie, Parcours "Psychologie, Ingénierie de la Formation, Orientation et Insertion"</li>
-    </ul>
-  </div>
+  <footer id="contacts">
+    <h2> Où me trouver et où me contacter : </h2>
 
-  <div class="bloc" id="openClassroom">
-    <h3>MON PARCOURS OPENCLASSROOM </h3> <br>
-    <hr> <br>
-    <ul <h2> <strong> Certifications obtenues pour les cours : </strong> </h2>
-<li>	Apprenez à créer votre site web avec HTML5 et CSS3 </li>
-<li>	Apprenez à programmer avec JavaScript </li>
-<li> Apprenez à utiliser la ligne de commande dans un terminal> </li>
-<li>	Découvrez le fonctionnement des algorithmes</li>
-<li>	Comprendre le Web</li>
-</ul>
-  </div>
-
-</div>
+    <div class="link-contact">
+      <i class="fa-solid fa-square-envelope fa-xl"></i>
+      <a href="mailto:celine.rouaire@gmail.com">Mon adresse mail : celine.rouaire@gmail.com</a>
+    </div>
 
 
+    <div class="link-contact">
+      <i class="fa-brands fa-linkedin fa-xl"></i>
+      <a href="https://www.linkedin.com/in/c%C3%A9line-rouaire-b91408165/" title="Mon profil Linkedin" target="_blank">Mon profil Linkedin</a> 
+    </div>
 
-<div class="themeContainer">
-  <div class="theme" id="dark"></div>
-  <div class="theme" id="white"></div>
-</div>
+    <div class="link-contact">
+      <i class="fa-brands fa-square-github fa-xl"></i>
+      <a href="https://github.com/GiraltDeReve" title="Mon profil Github" target="_blank">Mon profil Github</a>
+    </div>
 
-
-
-    </main>
-
-  </body>
-
-  <footer>
-    
- <br>
-      <h3> Où me trouver et où me contacter : </h3>
-      <br>
-      <hr>
-      <br>
-  
-      <p id ="contacts"> 
-        <img src="./assets/mail.png" alt="logo github"> 
-        
-        <a href="mailto:celine.rouaire@gmail.com"> <strong> Mon mail </strong> </a> <br><br> <strong> 
-        <img src="./assets/linkedin.png" alt="logo github"> 
-        <a href="https://www.linkedin.com/in/c%C3%A9line-rouaire-b91408165/" title="Mon profil Linkedin" target="_blank"><strong> Mon profil Linkedin</strong></a> <br><br> 
-        <img src="./assets/github.png" alt="logo github"> 
-        <a href="https://github.com/GiraltDeReve" title="Mon profil Github" target="_blank"> <strong> Mon profil Github</strong></a>
-    <br><br><br>
-      </div> 
   </footer>
-  <script src="./CV.js"></script>
+
+</body>
+  
 </html>   
+
+
+
